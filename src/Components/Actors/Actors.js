@@ -23,14 +23,15 @@ const Actors = () => {
         <div className="actors-container">
 
             <div className="actor-container">
+            <diV className="row row-cols-1 row-cols-md-3 g-4">
+                    {
+                        actors.map(actor =>
 
-                {
-                    actors.map(actor =>
-
-                        <Actor key={actor.id} actor={actor}
-                            handleAddToList={handleAddToList}
-                        ></Actor>)
-                }
+                            <Actor key={actor.id} actor={actor}
+                                handleAddToList={handleAddToList}
+                            ></Actor>)
+                    }
+                </diV>
             </div>
             <diV className="cart-container">
                 <List list={list}></List>

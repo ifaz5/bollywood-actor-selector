@@ -16,22 +16,27 @@ const Actor = (props) => {
 
     return (
 
-        <div class="row row-cols-1 row-cols-md-3 g-4 ">
-
-            <div class="col ">
-                <div class="card">
-                    <img className="card-img-top " src={img} alt="" />
-                    <div class="card-body">
-                        <h3 class="card-title">Name:{name}</h3>
-                        <h5>Age:{age}</h5>
-                        <h5>Film:{film}</h5>
-                        <h5>Salary:${salary}</h5>
-                        <button onClick={() => props.handleAddToList(props.actor)} className="btn-regular">{user} Add to List</button>
+       
+<div className="col  ">
+            <div className="card h-100">
+                <img className="card-img-top " src={img} alt="" />
+                <div className="card-body">
+                    <h3 className="card-title">Name:{name}</h3>
+                    <h5>Age:{age}</h5>
+                    <h5>Film:{film}</h5>
+                    <h5>Salary:${salary}</h5>
+                    <div className="d-flex justify-content-center ">
+                        <button type="button "
+                            className="btn "
+                            onClick={() => props.handleAddToList(props.actor)} className="btn-regular">{user} Add to List</button>
+                        <br />
+                        <br />
                         <a target="_blank" href={twitter} className="btn-twitter "> <FontAwesomeIcon icon={faTwitter} /> twitter</a>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
 

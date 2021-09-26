@@ -1,0 +1,14 @@
+.header{
+ 
+    height: 180px;
+   margin-top: -25px;
+   width: 100%;
+   color: white;
+
+  border-radius: 5px;
+  background-color: #e66465;
+  
+}
+.header h1{
+  padding-top: 50px;
+}

@@ -1,0 +1,18 @@
+.actors-container{
+    background: linear-gradient(#e7cfcf,rgb(216, 145, 216));
+    display:  grid;
+    grid-template-columns: 3fr 1fr;
+
+
+  
+  
+  border-radius: 5px;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.actor-container{ 
+    margin-right: 5px;
+    margin-left: 50px;
+}
